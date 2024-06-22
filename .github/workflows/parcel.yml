@@ -24,7 +24,7 @@ jobs:
       run: npm install
 
     - name: Run parcel build
-      run: parcel build src/index.html --dist-dir _site/ --public-url ${{ steps.pages.base_url }}
+      run: parcel build src/index.html --dist-dir _site/ --public-url ${{ steps.pages.outputs.base_url }}
         
     - name: Upload site dist 
       uses: actions/upload-pages-artifact@v3
