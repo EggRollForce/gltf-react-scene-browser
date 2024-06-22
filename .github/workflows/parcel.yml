@@ -20,10 +20,11 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
 
-    - name: Build
-      run: |
-        npm install
-        parcel build src/index.html --dist-dir _site/ --public-url ${{ steps.pages.base_url }}
+    - name: Install build requirements
+      run: npm install
+
+    - name: Run parcel build
+      run: parcel build src/index.html --dist-dir _site/ --public-url ${{ steps.pages.base_url }}
         
     - name: Upload site dist 
       uses: actions/upload-pages-artifact@v3
