@@ -1,0 +1,15 @@
+.slider > input[type=number]{
+    min-width: 10%;
+    max-width: 20%;
+}
+
+.slider > input[type=range]{
+    vertical-align:middle;
+    flex-grow: 1;
+}
+
+.slider {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #80808080;
+}

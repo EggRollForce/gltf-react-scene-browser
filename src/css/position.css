@@ -1,0 +1,9 @@
+.position {
+    display: flex;
+    flex-direction: column;
+}
+
+.position > span {
+    display: inline-flex;
+    flex-grow: 1;
+}

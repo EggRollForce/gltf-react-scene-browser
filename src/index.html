@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Basic 3D engine</title>
+    <link rel="stylesheet" href="./css/main.css" \>
+</head>
+
+<body>
+    <div class='container'>
+        <canvas id="viewport">
+            Please use a browser that supports "canvas"
+        </canvas>
+        <div style="position: absolute; top: 0;">
+            <span id="fps" style="color: white;"></span><br />
+
+        </div>
+        <div style="position: absolute; top: 0; right: 0; color: white;">
+            Use Scroll Wheel to move faster<br />
+            Hit the F key to toggle flight!<br />
+            You can drop in other files from <a href="gltf" target="_blank">Here</a>!<br />
+            They may be a bit foggy tho<br>
+            <br>
+            <div id="slider"></div>
+            <br>
+            <input type="button" value="Reset Camera" id="camreset" />
+
+        </div>
+    </div>
+</body>
+<script type="module" src="./main.tsx"></script>
+</html>
