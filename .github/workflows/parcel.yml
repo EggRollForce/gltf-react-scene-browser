@@ -15,7 +15,7 @@ jobs:
     
     - name: Setup Pages
       id: pages
-      uses: actions/configure-pages@v4
+      uses: actions/configure-pages@v3
       
     - name: Setup Node.js
       uses: actions/setup-node@v3
@@ -26,9 +26,8 @@ jobs:
         parcel build src/index.html
         
     - name: Upload site dist 
-      uses: actions/upload-pages-artifact@v4
+      uses: actions/upload-pages-artifact@v3
       with:
-        name: 3d-site
         path: ./dist
 
   # Deployment job
